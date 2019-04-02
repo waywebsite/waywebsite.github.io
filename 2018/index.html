@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="WAY Workshop"/>
+        <meta name="keywords" content="authentication, user, password, soups, way"/>
+        <meta name="author" content="WAY Workshop Chairs">
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <title>WAY 2018</title>
+        <link href="../css/thirdparty/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/custom/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">WAY 2018</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pastevents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Events</a>
+                        <div class="dropdown-menu" aria-labelledby="pastevents">
+                              <a class="dropdown-item" href="../index.html">5th WAY 2019</a> <!-- https://wayworkshop.org -->
+                              <a class="dropdown-item" href="index.html">4th WAY 2018</a> <!-- https://wayworkshop.org -->
+                              <!--<a class="dropdown-item" href="../2017/index.html">3rd WAY 2017</a>--> <!-- https://www.usenix.org/conference/soups2017/workshop-program/way2017 -->
+                              <!--<a class="dropdown-item" href="../2016/index.html">2nd WAY 2016</a>--> <!-- https://www.usenix.org/conference/soups2016/workshop-program/way2016 -->
+                              <!--<a class="dropdown-item" href="../2014/index.html">1st WAY 2014</a>--> <!-- https://cups.cs.cmu.edu/soups/2014/workshops/authentication.html -->
+                        </div>
+                    </li>
+              </ul>
+          </div>
+      </div><!-- end container -->
+        </nav>
+        <div class="container">
+            <h1>Who are you? Adventures in Authentication Workshop 2018</h1>
+            <br>
+            <h2 id="dates">Important Dates</h2>
+            <p>
+                Workshop: Sunday, August 12, 2018
+            </p>
+            <h2 id="location">Location</h2>
+            <p>
+                WAY 2018 will be co-located with <a href="https://www.usenix.org/conference/soups2018" target="_blank">SOUPS 2018</a> at the Baltimore Marriott Waterfront in Baltimore, MD, USA.
+            </p>
+            <p>
+                WAY will be held in Dover C Room.
+            </p>
+            <h2 id="overview">Overview</h2>
+            <p>
+                The purpose of this workshop is to bring together researchers and practitioners to share experiences, concerns, and ideas about known and new authentication techniques.
+                We are interested in discussing methods of evaluating the impact and usability of various authentication techniques, and ideas about novel authentication techniques that are secure, robust and usable.
+            </p>
+            <p>
+                Authentication, or the act of proving that someone is who they claim to be, is a cornerstone of security.
+                The importance of authentication continues to grow as users must prove their identity to maintain a continuous presence with a wide variety of computing devices and services.
+            </p>
+            <p>
+                The goal of this workshop is to explore these and related topics across the broad range of contexts, including enterprise systems, personal systems, and especially mobile and embedded systems (such as healthcare, smart home, IoT, and wearable systems).
+                This workshop provides an informal and interdisciplinary setting at the intersection of security, psychological, and behavioral science.
+            </p>
+            <p>
+                Workshop papers will be made available on the conference webpage but are considered non-archival.
+                WAY fosters a supportive and constructive environment for sharing ideas and giving feedback.
+                We welcome submissions about new and ongoing work, as well as completed projects.
+            </p>
+            <h2 id="organizers">Organizers</h2>
+            <h4>Workshop General Chairs</h4>
+            <ul class="list-unstyled">
+                <li>Larry Koved, IBM T.J. Watson Research Center</li>
+                <li>Elizabeth Stobert, Concordia University</li>
+            </ul>
+            <h4>Program Co-Chairs</h4>
+            <ul class="list-unstyled">
+                <li>Heather Crawford, Florida Institute of Technology</li>
+                <li>Elizabeth Stobert, Concordia University</li>
+            </ul>
+            <h4>Program Committee</h4>
+            <ul class="list-unstyled">
+                <li>Adam Aviv, U.S. Naval Academy</li>
+                <li>Zinaida Benenson, University of Erlangen-Nuremberg</li>
+                <li>Maximilian Golla, Ruhr-University Bochum</li>
+                <li>Ghassen Kilani, Florida Institute of Technology</li>
+                <li>Vijay Kothari, Dartmouth College</li>
+                <li>Lydia Kraus, Masaryk University</li>
+                <li>Nathan Malkin, University of California, Berkeley</li>
+                <li>Kopo Marvin Ramokapane, Lancaster University</li>
+                <li>Elham Vaziripour, Brigham Young University</li>
+                <li>Jonathan Voris, New York Institute of Technology</li>
+            </ul>
+        </div><!-- end container -->
+        <script src="../js/thirdparty/jquery-3.3.1.slim.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/thirdparty/jquery-slim.min.js"><\/script>')</script>
+        <script src="../js/thirdparty/bootstrap.bundle.min.js"></script>
+        <!-- Make the menu items look nice -->
+        <script>
+            $(".nav-item").on("click", function(){
+                console.log("click me");
+               $(".navbar-nav").find(".active").removeClass("active");
+               $(this).addClass("active");
+            });
+        </script>
+    </body>
+</html>
