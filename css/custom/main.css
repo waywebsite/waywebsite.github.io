@@ -1,3 +1,8 @@
 body > .container {
     padding: 80px 15px 0;
 }
+
+/* Paper archive anchors */
+.anchor {
+    padding-top: 90px;
+}
