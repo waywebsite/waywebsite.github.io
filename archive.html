@@ -15,23 +15,23 @@
     <body>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
-            <a class="navbar-brand" href="#">WAY 2019</a>
+            <a class="navbar-brand" href="./index.html">WAY 2020</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link text-primary" href="./index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-primary" href="./index.html#registration">Registration</a></li>
-                    <li class="nav-item"><a class="nav-link text-primary" href="./2019/program.html">Program</a></li>
-                    <li class="nav-item"><a class="nav-link text-primary" href="./2019/cfp.html">Call&nbsp;for&nbsp;Papers</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="./index.html#registration">Venue</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="./2020/cfp.html">Call&nbsp;for&nbsp;Papers</a></li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link text-secondary" href="./archive.html">Paper&nbsp;Archive</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-dark btn-sm" role="button" href="./archive.html"><i class="far fa-file-pdf"></i> Paper&nbsp;Archive</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="pastevents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past&nbsp;Events</a>
+                        <a class="btn btn-outline-dark btn-sm dropdown-toggle" role="button" href="#" id="pastevents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-history"></i> Past&nbsp;Events</a>
                         <div class="dropdown-menu" aria-labelledby="pastevents">
-                              <a class="dropdown-item text-right" href="./index.html">5th WAY 2019</a>
+                              <a class="dropdown-item text-right" href="./index.html">6th WAY 2020</a>
+                              <a class="dropdown-item text-right" href="./2019/index.html">5th WAY 2019</a>
                               <a class="dropdown-item text-right" href="./2018/index.html">4th WAY 2018</a>
                               <a class="dropdown-item text-right" href="https://www.usenix.org/conference/soups2017/workshop-program/way2017" target="_blank">3rd WAY 2017</a>
                               <a class="dropdown-item text-right" href="https://www.usenix.org/conference/soups2016/workshop-program/way2016" target="_blank">2nd WAY 2016</a>
@@ -221,16 +221,8 @@
             <br>
             <br>
         </div><!-- end container -->
-        <script src="js/thirdparty/jquery-3.3.1.slim.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/thirdparty/jquery-3.4.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery-3.4.1.min.js"><\/script>')</script>
         <script src="js/thirdparty/bootstrap.bundle.min.js"></script>
-        <!-- Make the menu items look nice -->
-        <script>
-            $(".nav-item").on("click", function(){
-                console.log("click me");
-               $(".navbar-nav").find(".active").removeClass("active");
-               $(this).addClass("active");
-            });
-        </script>
     </body>
 </html>
