@@ -28,11 +28,12 @@ body > .container {
 /* End - button in navbar */
 
 /* Offset for HTML anchors */
-h2 {
+h2:target {
     padding-top: 65px;
     margin-top: -65px;
 }
-h5 {
+
+h5:target {
     padding-top: 65px;
     margin-top: -65px;
 }
