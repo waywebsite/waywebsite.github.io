@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Register</title>
+        <link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
+        <link href="css/thirdparty/fontawesome.all.min.css" rel="stylesheet">
+        <link href="css/custom/main.css?rnd=123" rel="stylesheet">
+        <script src="js/thirdparty/jquery-3.4.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery-3.4.1.min.js"><\/script>')</script>
+        <script src="js/thirdparty/bootstrap.bundle.min.js"></script>
+        <script src="js/custom/register_webauthn.js"></script>
+    </head>
+    <body>
+<script>
+            const publicKey = {
+    "rp": {
+        "name": "Interests Research",
+        "id": "res.mobsec.rub.de"
+    },
+    "pubKeyCredParams": [
+        {
+            "type": "public-key",
+            "alg": -7
+        },
+        {
+            "type": "public-key",
+            "alg": -257
+        }
+    ],
+    "challenge": "cGw87RgCCIa_SBBHwS0BMQ",
+    "attestation": "none",
+    "user": {
+        "name": "anonymous",
+        "id": "c3VwZXItYmYxZDIzZDQtMTJmMS00Y2Y0LWJmYWQtYTdiZTk2M2ExNmU0",
+        "displayName": "Anonymous Participant"
+    },
+    "authenticatorSelection": {
+        "requireResidentKey": false,
+        "userVerification": "required"
+    },
+    "excludeCredentials": [
+        {
+            "type": "public-key",
+            "id": "QUJDREVGR0guLi4"
+        }
+    ],
+    "extensions": {
+        "txAuthSimple": "Execute order 66.",
+        "loc": true,
+        "uvm": true,
+        "uvi": true,
+        "exts": true
+    },
+    "timeout": 60000
+};
+        </script>
+
+<form id="registration-form" class="needs-validation" novalidate>
+                    <!--<div class="form-group">
+                        <label class="control-label" for="first"><i class="far fa-user"></i> First name</label>
+                        <input type="text" class="form-control" name="first" id="first" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="last"><i class="fas fa-user"></i> Last name</label>
+                        <input type="text" class="form-control" name="last" id="last" placeholder="Enter your last name">
+                    </div>-->
+                    <div class="form-group required">
+                        <label class="control-label" for="user"><i class="fas fa-user-astronaut"></i> Username</label>
+                        <input type="text" class="form-control" name="user" id="user" minlength="4" placeholder="Please pick a username" required>
+                        <div class="invalid-feedback">
+                        The username must be at least 4 characters.
+                        </div>
+                    </div>
+                    <button type="submit" id="register" class="btn btn-primary">Register</button>
+                </form>
+    </body>
+</html>
