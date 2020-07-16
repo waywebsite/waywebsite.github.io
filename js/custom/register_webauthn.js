@@ -48,25 +48,6 @@ function webAuthnCreateCredentials() {
 
 $(document).ready(function () {
     'use strict';
-    // Check wheter correct device and browser is used
-    if (PublicKeyCredential === undefined) {
-        window.alert("Your browser is not supported in this user study!");
-        location.href = 'help.php?#wrongbrowser';
-    }
-    var isChrome = /Chrome/.test(navigator.userAgent) && (/Google\ Inc/).test(navigator.vendor);
-    if (!isChrome) {
-        window.alert("Your are not using the Google Chrome browser, please only use Google Chrome in this user study!");
-        location.href = 'help.php?#wrongbrowser';
-    }
-    /*
-    var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-    if (!isAndroid) {
-        window.alert("Your are not using your phone, please use your Android phone in this user study!");
-        location.href = 'help.php?#notandroid';
-    }
-    */
-
     // Load server data
     publicKey.challenge = Uint8Array.from(window.atob(base64url2base64(publicKey.challenge)), function (c) {
         return c.charCodeAt(0);
