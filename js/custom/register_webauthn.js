@@ -1,5 +1,5 @@
 /*jslint browser: true */
-/*global window, $, publicKey, PublicKeyCredential */
+/*global window, $, publicKey, PublicKeyCredential, alert */
 
 function arrayToBase64String(a) {
     'use strict';
@@ -24,8 +24,6 @@ function base64url2base64(input) {
 
 function webAuthnCreateCredentials() {
     'use strict';
-    $("#alertbox").css('visibility', 'hidden');
-    $("#alertbox").text("PLACEHOLDER TEXT");
     navigator.credentials.create({publicKey: publicKey})
         .then(function (data) {
             const publicKeyCredential = {
@@ -37,12 +35,9 @@ function webAuthnCreateCredentials() {
                 },
                 type: data.type
             };
-            location.href = 'parse_w.php?data=' + window.btoa(JSON.stringify(publicKeyCredential));
+            alert(JSON.stringify(publicKeyCredential));
         }, function (error) {
-            console.log(error);
-            $("#alertbox").html("Registration failed. Please try again!");
-            $("#alertbox").css('visibility', 'visible');
-            $("#register").html('Retry ...');
+            alert(error);
         });
 }
 
@@ -63,18 +58,5 @@ $(document).ready(function () {
             return data;
         });
     }
-
-    // Register event listener
-    var forms = document.getElementsByClassName('needs-validation');
-    Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-            if (form.checkValidity() === true) {
-                webAuthnCreateCredentials();
-            }
-            form.classList.add('was-validated');
-        }, false);
-    });
-
+    webAuthnCreateCredentials();
 });
