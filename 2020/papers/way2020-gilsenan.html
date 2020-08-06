@@ -52,12 +52,12 @@
             </p>
             <h5 id="abstract">Abstract:</h5>
             <p>
-                TBA
+                Two-factor authentication (2FA) has consistently proven to dramatically increase the security of online accounts, but the privacy implications of enabling different methods of 2FA are not well studied. The Time-based One-Time Passwords (TOTP) algorithm is one method of 2FA that is widely deployed throughout industry. RFC6238 defines how the client and server utilize a shared secret to generate and validate a deterministic one-time password (OTP) during authentication. However, there is no standard for how to back up the shared secret on the client, resulting in custom implementations across dozens of consumer TOTP apps that directly impact the security and privacy of the TOTP 2FA scheme. In this paper, we define an assessment methodology for conducting systematic security and privacy analyses of the backup and recovery functionality of TOTP apps. Using this workflow, we analyzed the Authy Android app and observed that it sends the plaintext usernames of third party accounts to Authy servers, uses an inadequate work factor when deriving keys with PBKDF2, and encrypts Base32 encoded TOTP secrets, which makes them vulnerable to offline attacks.
             </p>
             <h5 id="download">Download:</h5>
             <ul class="list-inline">
                 <li>
-                    <a class="btn btn-sm btn-outline-dark disabled" href="#paperpdf" target="_blank"><i class="far fa-file-pdf"></i> <span class="network-name">Paper</span></a>
+                    <a class="btn btn-sm btn-outline-primary" href="way2020-gilsenan.pdf" target="_blank"><i class="far fa-file-pdf"></i> <span class="network-name">Paper</span></a>
                     <a class="btn btn-sm btn-outline-dark disabled" href="#slidespdf" target="_blank"><i class="fas fa-chalkboard-teacher"></i> <span class="network-name">Slides</span></a>
                     <!-- <a class="btn btn-sm btn-outline-dark disabled" href="#youtube" target="_blank"><i class="fab fa-youtube"></i> <span class="network-name">Talk</span></a> -->
                     <!-- <a class="btn btn-sm btn-outline-dark disabled" href="#website" target="_blank"><i class="fab fa-chrome"></i> <span class="network-name">Website</span></a> -->
