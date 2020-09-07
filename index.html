@@ -12,17 +12,17 @@
         <link href="css/thirdparty/fontawesome.all.min.css" rel="stylesheet">
         <link href="css/custom/main.css?rnd=123" rel="stylesheet">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <body id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-            <a class="navbar-brand" href="./index.html">WAY 2020</a>
+            <a class="navbar-brand" href="#main">WAY 2020</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link text-primary" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-primary" href="./index.html#registration">Registration</a></li>
+                <ul class="navbar-nav mr-auto smooth-scroll">
+                    <li class="nav-item active"><a class="nav-link text-primary" href="#main" data-toggle="collapse" data-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="#registration" data-toggle="collapse" data-target=".navbar-collapse.show">Registration</a></li>
                     <li class="nav-item"><a class="nav-link text-primary" href="./2020/program.html">Program</a></li>
                     <li class="nav-item"><a class="nav-link text-primary" href="./2020/cfp.html">Call&nbsp;for&nbsp;Papers</a></li>
                 </ul>
@@ -47,7 +47,7 @@
             <h1>Who Are You?! Adventures in Authentication Workshop (WAY)</h1>
             <h5>Friday, August 7th, 2020 &mdash; Virtual Event on Zoom</h5>
             <hr>
-            <h2 id="home"><i class="fas fa-chalkboard-teacher"></i> About WAY</h2>
+            <h2 id="about"><i class="fas fa-chalkboard-teacher"></i> About WAY</h2>
             <p>
                 The purpose of this workshop is to bring together <b>researchers, practitioners, and industry</b> to share <b>experiences, concerns, and ideas about</b> known and new <b>authentication techniques</b>.
             </p>
@@ -109,8 +109,9 @@
             <br>
             <br>
         </div><!-- end container -->
-        <script src="js/thirdparty/jquery-3.4.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery-3.4.1.min.js"><\/script>')</script>
+        <script src="js/thirdparty/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery.min.js"><\/script>')</script>
         <script src="js/thirdparty/bootstrap.bundle.min.js"></script>
+        <script src="js/custom/way.js"></script>
     </body>
 </html>

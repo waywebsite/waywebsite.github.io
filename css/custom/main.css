@@ -1,14 +1,5 @@
-html, body {
-    width: 100%;
-}
-
 body > .container {
     padding: 80px 15px 0;
-}
-
-/* Paper archive anchors */
-.anchor {
-    padding-top: 90px;
 }
 
 /* Start - button in navbar */
@@ -26,14 +17,3 @@ body > .container {
     border-color: #28a745!important;
 }
 /* End - button in navbar */
-
-/* Offset for HTML anchors */
-h2:target {
-    padding-top: 65px;
-    margin-top: -65px;
-}
-
-h5:target {
-    padding-top: 65px;
-    margin-top: -65px;
-}
