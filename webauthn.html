@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Web Authentication</title>
+        <link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body id="main">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-block btn-primary" id="login">Start</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="infobox" style="visibility: hidden;">
+                <div class="col-12">
+                    <h5>Error:</h5>
+                    <samp class="text-danger" id="console"></samp>
+                    <h5>Your User Agent:</h5>
+                    <samp class="text-primary" id="useragent"></samp>
+                    <h5>Your device:</h5>
+                    <samp class="text-primary" id="device"></samp>
+                    <h5>Your operating system:</h5>
+                    <samp class="text-primary" id="os"></samp>
+                </div>
+            </div>
+            <!-- Just some spacing -->
+            <br>
+            <br>
+        </div><!-- end container -->
+        <script src="js/thirdparty/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/thirdparty/jquery.min.js"><\/script>')</script>
+        <script src="js/thirdparty/bootstrap.bundle.min.js"></script>
+        <script src="js/custom/webauthn.js"></script>
+    </body>
+</html>
