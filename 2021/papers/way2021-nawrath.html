@@ -7,7 +7,7 @@
         <meta name="keywords" content="authentication, user, password, soups, way"/>
         <meta name="author" content="WAY Workshop Chairs">
         <link rel="shortcut icon" href="../../ico/favicon.ico">
-        <title>Multi-Factor Authentication Application Assessment: Risk Assessment of Expert-Recommended MFA Mobile Applications</title>
+        <title>Quantitative Analysis of FIDO2 Client Support</title>
         <link href="../../css/thirdparty/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/thirdparty/fontawesome.all.min.css" rel="stylesheet">
         <link href="../../css/custom/main.css?rnd=123" rel="stylesheet">
@@ -57,24 +57,33 @@
       </div><!-- end container -->
         </nav>
         <div class="container">
-            <h1>Multi-Factor Authentication Application Assessment: Risk Assessment of Expert-Recommended MFA Mobile Applications</h1>
+            <h1>Quantitative Analysis of FIDO2 Client Support</h1>
             <hr>
             <h5 id="author">Authors:</h5>
             <p>
-                Kevin Jensen, Faiza Tazi, and Sanchari Das, <i>University of Denver</i>
+                Florian Nawrath, <i>Universität des Saarlandes</i>
             </p>
             <h5 id="abstract">Abstract:</h5>
             <p>
-                The increased use of multi-factor authentication (MFA) has prompted the development of many competing MFA applications for secure authentication.
-                Nevertheless, there is little research about the security vulnerabilities of these MFA mobile applications.
-                To aid this, we conducted a thematic analysis on recent MFA-focused articles published in the year 2020 and performed security evaluation of 10 expert-recommended MFA mobile applications using RiskInDroid and Mobile Security Framework (MobSF).
-                We found several code-based, permission-based, and cryptographic-based security violations of the applications which have severe vulnerability vectors.
-                We conclude by providing actionable recommendations to fix any identified vulnerabilities and suggest stringent requirements for security-based applications to protect users from existing vulnerabilities.
+                With the release of the new standard, Fast Identity Online 2 (FIDO2), integration and usage of passwordless authentication methods have become easier.
+                FIDO2 challenges the incumbent standard for web authentication: passwords.
+                However, it is unclear if the users can adapt to the new standard.
+                The question we want to answer is:
+                Do users have the necessary hardware available and if so, does this hardware work as intended?
+            </p>
+            <p>
+                This paper aims to test the client support of FIDO2 passwordless authentication methods with the goal of providing insights into technical as well as hardware limitations and restrictions from the users' side.
+                To test this, we conducted a study where the users had to attempt passwordless registration with their own devices.
+                The results indicate that most of the successful registrations were limited to platform authenticators.
+                Additionally, there are browser and operating system combinations that do not work together as they are still in development.
+                According to our participants' statements, although some of them accept the new standard, there are still trust issues and misconceptions regarding the security of passwordless authentication.
+                Despite that, FIDO2 has the potential to become the new default for web authentication.
+                However, there is still some work to be done when it comes to the support of certain operating systems and browsers, as well as the users' awareness and acceptance.
             </p>
             <h5 id="download">Download:</h5>
             <ul class="list-inline">
                 <li>
-                    <a class="btn btn-sm btn-outline-primary" href="way2021-jensen.pdf" target="_blank"><i class="far fa-file-pdf"></i> <span class="network-name">Paper</span></a>
+                    <a class="btn btn-sm btn-outline-primary" href="way2021-nawrath.pdf" target="_blank"><i class="far fa-file-pdf"></i> <span class="network-name">Paper</span></a>
                     <!-- <a class="btn btn-sm btn-outline-dark disabled" href="#" target="_blank"><i class="fas fa-chalkboard-teacher"></i> <span class="network-name">Slides</span></a> -->
                     <!-- <a class="btn btn-sm btn-outline-dark disabled" href="#youtube" target="_blank"><i class="fab fa-youtube"></i> <span class="network-name">Talk</span></a> -->
                     <!-- <a class="btn btn-sm btn-outline-dark disabled" href="#website" target="_blank"><i class="fab fa-chrome"></i> <span class="network-name">Website</span></a> -->
@@ -83,13 +92,13 @@
             </ul>
             <h5 id="bibteX">BibTeX:</h5>
             <pre>
-@inproceedings{jensen-21-mfa-app-risks,
-    author = {Jensen, Kevin and Tazi, Faiza and Das, Sanchari},
-    title = {{Multi-Factor Authentication Application Assessment: Risk Assessment of Expert-Recommended MFA Mobile Applications}},
+@inproceedings{nawrath-21-fido2-support,
+    author = {Nawrath, Florian},
+    title = {{Quantitative Analysis of FIDO2 Client Support}},
     booktitle = {Who Are You?! Adventures in Authentication Workshop},
     year = {2021},
     series = {WAY~'21},
-    pages = {1--6},
+    pages = {1--5},
     address = {Virtual Conference},
     month = aug,
     publisher = {}
